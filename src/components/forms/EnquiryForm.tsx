@@ -446,7 +446,7 @@ export default function EnquiryForm() {
         </div>
 
         {/* Privacy Note */}
-        <p className="text-xs text-slate-500 leading-relaxed">
+        <p className="text-sm text-slate-500 leading-relaxed">
           🔒 Your information is confidential. We do not request bank credentials or passwords through this website. Submissions are governed by our{" "}
           <a href="/privacy" className="text-teal-700 underline">Privacy Policy</a>.
         </p>

@@ -55,6 +55,11 @@
 }
 
 /* Utility custom classes */
+.text-md {
+  font-size: 1.0625rem; /* 17px - ideal reading size */
+  line-height: 1.68;
+}
+
 .bg-brand-navy {
   background-color: var(--brand-navy);
 }

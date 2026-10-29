@@ -74,7 +74,7 @@ export default function ServicesPage() {
                   {srv.title}
                 </h2>
 
-                <p className="text-base text-slate-600 leading-relaxed">
+                <p className="text-md text-slate-600 leading-relaxed">
                   {srv.fullDescription}
                 </p>
 
@@ -84,7 +84,7 @@ export default function ServicesPage() {
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {srv.highlights.map((hl, hIdx) => (
-                      <div key={hIdx} className="flex items-center gap-2 text-xs sm:text-sm text-slate-700">
+                      <div key={hIdx} className="flex items-center gap-2 text-sm text-slate-700">
                         <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0" />
                         <span>{hl}</span>
                       </div>
@@ -119,7 +119,7 @@ export default function ServicesPage() {
       <section className="py-16 bg-[#12243A] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <h2 className="text-2xl sm:text-3xl font-extrabold">Need a Combined Advisory Package?</h2>
-          <p className="text-slate-300 text-sm sm:text-base">
+          <p className="text-md text-slate-300 leading-relaxed max-w-2xl mx-auto">
             Many clients engage us for both ongoing statutory tax advisory and cloud accounting modernization. We tailor custom multi-service retainers to fit your organization.
           </p>
           <div className="pt-4">

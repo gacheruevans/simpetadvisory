@@ -197,7 +197,7 @@ export default function Header() {
                           <div className="text-sm font-semibold text-[#12243A] group-hover:text-[#0F766E] transition-colors">
                             {srv.title}
                           </div>
-                          <div className="text-xs text-slate-500 line-clamp-1">
+                          <div className="text-sm text-slate-500 line-clamp-1">
                             {srv.shortDescription}
                           </div>
                         </div>
@@ -325,7 +325,7 @@ export default function Header() {
             </div>
 
             {/* Mobile Contact Footer Info */}
-            <div className="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-500 space-y-3">
+            <div className="mt-8 pt-6 border-t border-slate-100 text-sm text-slate-500 space-y-3">
               <div className="flex items-center gap-2 text-slate-700 font-medium">
                 <MapPin className="w-4 h-4 text-[#C89B3C] shrink-0" />
                 <span>{COMPANY_INFO.contact.location}</span>

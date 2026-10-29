@@ -160,7 +160,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               {service.targetAudience.map((audience, idx) => (
                 <div key={idx} className="flex items-start gap-3 p-4 rounded-xl bg-white border border-slate-200/80 shadow-xs">
                   <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0 mt-0.5" />
-                  <span className="text-sm sm:text-base text-slate-700 font-medium">{audience}</span>
+                  <span className="text-md text-slate-700 font-medium">{audience}</span>
                 </div>
               ))}
             </div>
@@ -176,7 +176,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               <div className="space-y-1 text-center md:text-left">
                 <div className="text-xs font-bold uppercase tracking-wider text-teal-400">Statutory Tax Excellence</div>
                 <h3 className="text-xl sm:text-2xl font-bold">KRA iTax, eTIMS & Statutory Compliance</h3>
-                <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
+                <p className="text-md text-slate-200 max-w-xl leading-relaxed">
                   We manage your monthly VAT, PAYE, and annual corporate returns with zero default notices, complete ledger accuracy, and dedicated KRA audit defense.
                 </p>
               </div>
@@ -201,7 +201,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               <div className="space-y-1 text-center md:text-left">
                 <div className="text-xs font-bold uppercase tracking-wider text-teal-400">Verified Implementation Specialist</div>
                 <h3 className="text-xl sm:text-2xl font-bold">Official Authorized Zoho Partner in Kenya</h3>
-                <p className="text-xs sm:text-sm text-slate-300 max-w-xl">{COMPANY_INFO.partnerNotice}</p>
+                <p className="text-md text-slate-200 max-w-xl leading-relaxed">{COMPANY_INFO.partnerNotice}</p>
               </div>
               <div className="relative w-36 h-14 shrink-0 bg-slate-900 rounded-2xl p-2 border border-slate-700">
                 <Image
@@ -226,7 +226,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             <h2 className="text-3xl sm:text-4xl font-extrabold text-[#12243A]">
               Detailed Deliverables & Work Streams
             </h2>
-            <p className="text-slate-600 text-base sm:text-lg">
+            <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
               Every deliverable is handled with meticulous technical discipline, verified checklists, and executive transparency.
             </p>
           </div>
@@ -239,11 +239,11 @@ export default async function ServiceDetailPage({ params }: Props) {
                     {idx + 1}
                   </div>
                   <h3 className="text-xl font-bold text-[#12243A]">{item.title}</h3>
-                  <p className="text-sm text-slate-600">{item.description}</p>
+                  <p className="text-md text-slate-600 leading-relaxed">{item.description}</p>
                   
                   <ul className="space-y-2.5 pt-4 border-t border-slate-100">
                     {item.points.map((pt, pIdx) => (
-                      <li key={pIdx} className="text-xs sm:text-sm text-slate-600 flex items-start gap-2">
+                      <li key={pIdx} className="text-sm text-slate-700 flex items-start gap-2">
                         <CheckCircle2 className="w-4 h-4 text-teal-600 shrink-0 mt-0.5" />
                         <span>{pt}</span>
                       </li>
@@ -273,7 +273,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               <div key={idx} className="p-6 rounded-2xl bg-slate-50 border border-slate-200">
                 <span className="text-2xl font-black text-teal-600/40 block mb-2">{step.step}</span>
                 <h3 className="text-base font-bold text-[#12243A] mb-2">{step.title}</h3>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">{step.detail}</p>
+                <p className="text-md text-slate-600 leading-relaxed">{step.detail}</p>
               </div>
             ))}
           </div>
@@ -297,7 +297,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             {service.faqs.map((faq, fIdx) => (
               <div key={fIdx} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-xs space-y-2">
                 <h3 className="text-base sm:text-lg font-bold text-[#12243A]">{faq.question}</h3>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">{faq.answer}</p>
+                <p className="text-md sm:text-lg text-slate-600 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -310,7 +310,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
             {service.ctaHeadline}
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-md sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Schedule a conversation with {COMPANY_INFO.manager.name} to evaluate your requirements and receive a structured proposal.
           </p>
 

@@ -139,7 +139,7 @@ export default function HomePage() {
                       <CheckCircle2 className="w-5 h-5 text-teal-400 shrink-0 mt-0.5" />
                       <div>
                         <div className="text-sm font-semibold text-white">KRA Statutory Adherence</div>
-                        <div className="text-xs text-slate-400">VAT, PAYE, and Corporate Returns reconciled seamlessly.</div>
+                        <div className="text-sm text-slate-300 font-normal mt-0.5">VAT, PAYE, and Corporate Returns reconciled seamlessly.</div>
                       </div>
                     </div>
 
@@ -147,7 +147,7 @@ export default function HomePage() {
                       <CheckCircle2 className="w-5 h-5 text-[#C89B3C] shrink-0 mt-0.5" />
                       <div>
                         <div className="text-sm font-semibold text-white">Outsourced Audit & Assurance</div>
-                        <div className="text-xs text-slate-400">Tight internal controls and structured risk assessments.</div>
+                        <div className="text-sm text-slate-300 font-normal mt-0.5">Tight internal controls and structured risk assessments.</div>
                       </div>
                     </div>
 
@@ -155,7 +155,7 @@ export default function HomePage() {
                       <CheckCircle2 className="w-5 h-5 text-teal-400 shrink-0 mt-0.5" />
                       <div>
                         <div className="text-sm font-semibold text-white">Zoho Books Cloud Accounting</div>
-                        <div className="text-xs text-slate-400">Automated invoices, live bank feeds, and audit trails.</div>
+                        <div className="text-sm text-slate-300 font-normal mt-0.5">Automated invoices, live bank feeds, and audit trails.</div>
                       </div>
                     </div>
                   </div>
@@ -189,7 +189,7 @@ export default function HomePage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#12243A]">
               Solutions Built for Your Exact Needs
             </h2>
-            <p className="text-slate-600 text-base sm:text-lg">
+            <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
               Whether you are optimizing organizational operations, empowering staff, or seeking an inspirational speaker, our engagements deliver measurable value.
             </p>
           </div>
@@ -208,7 +208,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-[#12243A]">
                   Corporate Financial Literacy
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-md text-slate-600 leading-relaxed">
                   Equip employees with actionable budgeting, debt elimination strategies, and retirement readiness to reduce financial stress and improve workplace focus.
                 </p>
               </div>
@@ -235,7 +235,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-[#12243A]">
                   Keynote Empowerment Talks
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-md text-slate-600 leading-relaxed">
                   Inspiring, actionable speaking sessions on resilience, financial confidence, leadership purpose, and personal growth delivered by Catherine Mwangi.
                 </p>
               </div>
@@ -262,7 +262,7 @@ export default function HomePage() {
                 <h3 className="text-xl font-bold text-[#12243A]">
                   Accounting, Tax & Zoho ERP
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-md text-slate-600 leading-relaxed">
                   Streamline bookkeeping, ensure total KRA statutory compliance, and transition seamlessly to Zoho Books with authorized partner support.
                 </p>
               </div>
@@ -293,7 +293,7 @@ export default function HomePage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#12243A]">
                 Comprehensive Financial & Advisory Practices
               </h2>
-              <p className="text-slate-600 text-base sm:text-lg">
+              <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                 Delivered with rigorous statutory discipline, transparent reporting, and modern systems architecture.
               </p>
             </div>
@@ -352,7 +352,7 @@ export default function HomePage() {
                     <h3 className="text-xl font-bold text-[#12243A] group-hover:text-[#0F766E] transition-colors">
                       {srv.title}
                     </h3>
-                    <p className="text-sm text-slate-600 mt-2 leading-relaxed">
+                    <p className="text-md text-slate-600 mt-2 leading-relaxed">
                       {srv.shortDescription}
                     </p>
                   </div>
@@ -364,7 +364,7 @@ export default function HomePage() {
                     </div>
                     <ul className="space-y-2">
                       {srv.highlights.slice(0, 3).map((hl, idx) => (
-                        <li key={idx} className="text-xs text-slate-600 flex items-start gap-2">
+                        <li key={idx} className="text-sm text-slate-700 flex items-start gap-2">
                           <CheckCircle2 className="w-3.5 h-3.5 text-teal-600 shrink-0 mt-0.5" />
                           <span>{hl}</span>
                         </li>
@@ -414,11 +414,11 @@ export default function HomePage() {
                   Modernize Your Financial Workflows with Zoho Books
                 </h2>
 
-                <p className="text-base sm:text-lg text-slate-200 leading-relaxed font-normal">
+                <p className="text-md sm:text-lg text-slate-200 leading-relaxed font-normal">
                   Stop wrestling with manual spreadsheets and fragmented ledgers. Simpet Advisory provides end-to-end Zoho Books implementation: workflow discovery, chart of accounts design, historical data migration, and hands-on staff onboarding.
                 </p>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm text-slate-300 pt-2">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-md text-slate-200 pt-2">
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-teal-400" />
                     <span>Real-time financial reporting</span>
@@ -470,7 +470,7 @@ export default function HomePage() {
                     <h3 className="text-xl font-bold text-white tracking-tight">Authorized Zoho Partner</h3>
                     <p className="text-xs text-teal-300 font-medium mt-1">Verified Implementation Specialist</p>
                   </div>
-                  <p className="text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-4">
+                  <p className="text-sm text-slate-300 leading-relaxed border-t border-slate-800 pt-4">
                     {COMPANY_INFO.partnerNotice}
                   </p>
                   <div className="pt-1 text-[11px] text-[#C89B3C] font-semibold">
@@ -494,7 +494,7 @@ export default function HomePage() {
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#12243A]">
               How Every Engagement Works
             </h2>
-            <p className="text-slate-600 text-base sm:text-lg">
+            <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
               We eliminate guesswork with a structured, transparent process designed to respect your timeline and deliver actionable results.
             </p>
           </div>
@@ -505,7 +505,7 @@ export default function HomePage() {
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative">
               <div className="text-3xl font-extrabold text-teal-600/30 mb-2">01</div>
               <h3 className="text-lg font-bold text-[#12243A]">Discovery Consultation</h3>
-              <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-md text-slate-600 mt-2 leading-relaxed">
                 We sit down with your leadership team to understand operational pain points, compliance deadlines, or training goals.
               </p>
             </div>
@@ -514,7 +514,7 @@ export default function HomePage() {
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative">
               <div className="text-3xl font-extrabold text-teal-600/30 mb-2">02</div>
               <h3 className="text-lg font-bold text-[#12243A]">Tailored Scope & Proposal</h3>
-              <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-md text-slate-600 mt-2 leading-relaxed">
                 You receive a detailed, unambiguous engagement agreement defining deliverables, timelines, and transparent fee structures.
               </p>
             </div>
@@ -523,7 +523,7 @@ export default function HomePage() {
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative">
               <div className="text-3xl font-extrabold text-teal-600/30 mb-2">03</div>
               <h3 className="text-lg font-bold text-[#12243A]">Disciplined Delivery</h3>
-              <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-md text-slate-600 mt-2 leading-relaxed">
                 Whether deploying Zoho Books, reconciling ledgers, conducting audits, or training staff, we execute with precision.
               </p>
             </div>
@@ -532,7 +532,7 @@ export default function HomePage() {
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative">
               <div className="text-3xl font-extrabold text-teal-600/30 mb-2">04</div>
               <h3 className="text-lg font-bold text-[#12243A]">Review & Ongoing Support</h3>
-              <p className="text-xs sm:text-sm text-slate-600 mt-2 leading-relaxed">
+              <p className="text-md text-slate-600 mt-2 leading-relaxed">
                 We provide comprehensive post-delivery reports, executive walkthroughs, and agreed follow-up to ensure lasting impact.
               </p>
             </div>
@@ -567,11 +567,11 @@ export default function HomePage() {
                   Guiding Businesses with Financial Clarity & Empathy
                 </h2>
 
-                <p className="text-base text-slate-600 leading-relaxed">
+                <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                   {COMPANY_INFO.manager.bio}
                 </p>
 
-                <p className="text-base text-slate-600 leading-relaxed">
+                <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                   At Simpet Advisory, we believe that sustainable organizational growth is built on two twin pillars: tight, compliant financial systems on one side, and empowered, financially literate people on the other. Every engagement is led with integrity, personal accountability, and deep respect for your corporate mission.
                 </p>
 
@@ -612,7 +612,7 @@ export default function HomePage() {
             Ready to Strengthen Your Financial Foundations?
           </h2>
 
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-md sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Schedule a discovery call with Catherine Mwangi and the Simpet Advisory team to discuss your accounting, statutory tax, internal audit, staff training, or Zoho Books requirements.
           </p>
 

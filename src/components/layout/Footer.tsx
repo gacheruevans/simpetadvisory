@@ -38,7 +38,7 @@ export default function Footer() {
               </div>
             </Link>
 
-            <p className="text-sm text-slate-300 leading-relaxed max-w-sm">
+            <p className="text-md text-slate-300 leading-relaxed max-w-sm">
               Empowering people with actionable financial understanding and equipping growing enterprises with robust accounting, statutory tax compliance, and modern ERP systems.
             </p>
 
@@ -47,7 +47,7 @@ export default function Footer() {
               <div className="text-xs font-semibold uppercase tracking-wider text-[#C89B3C]">
                 Leadership & Governance
               </div>
-              <p className="text-xs text-slate-300 mt-1">
+              <p className="text-sm text-slate-300 mt-1">
                 Led by <span className="text-white font-medium">{COMPANY_INFO.manager.name}</span>, {COMPANY_INFO.manager.role}.
               </p>
             </div>
@@ -150,7 +150,7 @@ export default function Footer() {
             <h3 className="text-sm font-semibold tracking-wider uppercase text-white">
               Nairobi Office
             </h3>
-            <div className="space-y-3 text-xs leading-relaxed">
+            <div className="space-y-3 text-sm leading-relaxed">
               <div className="flex items-start gap-2.5">
                 <MapPin className="w-4 h-4 text-[#C89B3C] shrink-0 mt-0.5" />
                 <div>

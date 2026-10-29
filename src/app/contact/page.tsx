@@ -62,7 +62,7 @@ export default function ContactPage() {
             <div className="lg:col-span-7">
               <div className="mb-6">
                 <h2 className="text-2xl font-bold text-[#12243A]">Send an Advisory Inquiry</h2>
-                <p className="text-sm text-slate-600 mt-1">
+                <p className="text-md text-slate-600 mt-1 leading-relaxed">
                   Fill out the form below. We review every submission personally and respond within 24 business hours.
                 </p>
               </div>
@@ -91,7 +91,7 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                <div className="space-y-4 text-sm text-slate-700">
+                <div className="space-y-4 text-md text-slate-700">
                   <div className="flex items-start gap-3">
                     <MapPin className="w-5 h-5 text-[#C89B3C] shrink-0 mt-0.5" />
                     <div>
@@ -157,7 +157,7 @@ export default function ContactPage() {
                   Prompt Response Guaranteed
                 </div>
                 <h3 className="text-xl font-bold">Prefer Direct Messaging?</h3>
-                <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                <p className="text-md text-slate-300 leading-relaxed">
                   For urgent statutory deadlines, speaking invitations, or quick availability checks, you can reach out via WhatsApp or telephone during office hours.
                 </p>
                 <div className="pt-2">

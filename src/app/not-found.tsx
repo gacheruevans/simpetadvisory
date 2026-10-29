@@ -19,7 +19,7 @@ export default function NotFound() {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-[#12243A]">
             The Page You Requested Does Not Exist
           </h1>
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 text-md leading-relaxed">
             The page you are looking for may have been moved or updated. Let&apos;s guide you back to our core services or our homepage.
           </p>
         </div>
@@ -41,7 +41,7 @@ export default function NotFound() {
           </Link>
         </div>
 
-        <div className="pt-6 border-t border-slate-200 text-xs text-slate-500">
+        <div className="pt-6 border-t border-slate-200 text-sm text-slate-500">
           Need immediate assistance? Contact our Nairobi office at{" "}
           <a href="tel:+254773100577" className="font-semibold text-slate-800 underline">0773 100 577</a>
           {" or "}

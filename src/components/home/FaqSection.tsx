@@ -53,7 +53,7 @@ export default function FaqSection() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-[#12243A]">
             Clear Answers for Confident Decisions
           </h2>
-          <p className="text-base text-slate-600 max-w-2xl mx-auto">
+          <p className="text-md sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
             Everything you need to know about our consultancy engagements, delivery methodology, and training programs.
           </p>
         </div>
@@ -85,7 +85,7 @@ export default function FaqSection() {
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 pb-6 sm:px-6 sm:pb-6 text-slate-600 text-sm sm:text-base leading-relaxed border-t border-slate-100 pt-4 animate-in fade-in duration-150">
+                  <div className="px-5 pb-6 sm:px-6 sm:pb-6 text-slate-600 text-md leading-relaxed border-t border-slate-100 pt-4 animate-in fade-in duration-150">
                     {faq.answer}
                   </div>
                 )}

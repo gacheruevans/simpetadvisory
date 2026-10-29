@@ -89,23 +89,23 @@ export default function AboutPage() {
               <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#12243A]">
                 The Twin Pillars of Sustainable Business
               </h2>
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+              <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                 Many consultancies view numbers in complete isolation—focusing strictly on bookkeeping entries, tax brackets, and compliance checklists. Others focus entirely on motivational training without understanding operational economics.
               </p>
-              <p className="text-base sm:text-lg text-slate-600 leading-relaxed">
+              <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                 Simpet Advisory was founded on a different conviction: <strong className="text-[#12243A]">true organizational strength requires both.</strong> A company cannot scale sustainably if its accounting records are in disarray or statutory liabilities are ignored. Equally, an organization cannot thrive if its workforce is weighed down by personal financial anxiety and lack of economic literacy.
               </p>
               
               <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200">
                   <div className="text-teal-700 font-bold text-lg mb-1">01. Sound Systems</div>
-                  <div className="text-xs text-slate-600">
+                  <div className="text-sm text-slate-600 leading-relaxed">
                     Clean ledgers, full KRA compliance, risk assurance, and automated cloud workflows via Zoho Books.
                   </div>
                 </div>
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200">
                   <div className="text-[#C89B3C] font-bold text-lg mb-1">02. Empowered People</div>
-                  <div className="text-xs text-slate-600">
+                  <div className="text-sm text-slate-600 leading-relaxed">
                     Practical financial literacy, workplace wellness, and inspiring leadership talks that build lasting confidence.
                   </div>
                 </div>
@@ -123,7 +123,7 @@ export default function AboutPage() {
                   <blockquote className="text-lg text-slate-300 italic border-l-2 border-teal-500 pl-4 py-1">
                     &ldquo;Empowering People. Strengthening Businesses.&rdquo;
                   </blockquote>
-                  <p className="text-sm text-slate-400 leading-relaxed">
+                  <p className="text-md text-slate-300 leading-relaxed">
                     We pledge to serve every client with absolute statutory diligence, clear communication without confusing jargon, and transparent pricing that respects your commercial reality.
                   </p>
                   <div className="pt-4 border-t border-slate-800 flex items-center gap-4 text-xs text-teal-300">
@@ -178,21 +178,21 @@ export default function AboutPage() {
                   Dedicated to Building Stronger Financial Foundations
                 </h3>
                 
-                <p className="text-base text-slate-600 leading-relaxed">
+                <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                   Catherine Mwangi brings extensive experience in Kenyan statutory tax compliance, financial reporting, corporate budgeting, and systems modernization. Throughout her career, she has guided business owners through complex KRA tax requirements, spearheaded internal control implementations, and helped organizations navigate critical transitions from manual spreadsheets to structured cloud accounting.
                 </p>
 
-                <p className="text-base text-slate-600 leading-relaxed">
+                <p className="text-md sm:text-lg text-slate-600 leading-relaxed">
                   As an educator and keynote speaker, Catherine is passionate about breaking down intimidating financial concepts into practical, relatable steps. Her corporate financial wellness workshops have transformed how employees view their earnings, savings, debt, and retirement planning, creating calmer, more focused teams.
                 </p>
 
                 <div className="space-y-3 pt-2">
-                  <div className="flex items-center gap-3 text-sm text-slate-700">
+                  <div className="flex items-center gap-3 text-md text-slate-700 font-medium">
                     <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
                     <span>Hands-on leadership across all client advisory assignments</span>
                   </div>
                   <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-white border border-slate-200">
-                    <div className="flex items-center gap-3 text-sm text-slate-700">
+                    <div className="flex items-center gap-3 text-md text-slate-700 font-medium">
                       <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
                       <span>Deep familiarity with KRA iTax, eTIMS, VAT, and corporate statutory rules</span>
                     </div>
@@ -207,7 +207,7 @@ export default function AboutPage() {
                   </div>
 
                   <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-white border border-slate-200">
-                    <div className="flex items-center gap-3 text-sm text-slate-700">
+                    <div className="flex items-center gap-3 text-md text-slate-700 font-medium">
                       <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
                       <span>Authorized Zoho Books cloud ERP implementation expertise</span>
                     </div>
@@ -259,7 +259,7 @@ export default function AboutPage() {
                 <ShieldCheck className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[#12243A]">Statutory Integrity</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-md text-slate-600 leading-relaxed">
                 We believe in ethical compliance and uncompromising honesty. We help clients navigate rules legally without shortcuts.
               </p>
             </div>
@@ -269,7 +269,7 @@ export default function AboutPage() {
                 <Target className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[#12243A]">Technical Precision</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-md text-slate-600 leading-relaxed">
                 Double-entry bookkeeping and audit reconciliations require meticulous care. We verify numbers to the cent.
               </p>
             </div>
@@ -279,7 +279,7 @@ export default function AboutPage() {
                 <HeartHandshake className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[#12243A]">Human Empathy</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-md text-slate-600 leading-relaxed">
                 Financial difficulties can be stressful. We treat founders and employees with warmth, dignity, and practical reassurance.
               </p>
             </div>
@@ -289,7 +289,7 @@ export default function AboutPage() {
                 <TrendingUp className="w-5 h-5" />
               </div>
               <h3 className="text-lg font-bold text-[#12243A]">Operational Modernization</h3>
-              <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              <p className="text-md text-slate-600 leading-relaxed">
                 We champion modern cloud technology like Zoho Books to replace manual drudgery with automated efficiency.
               </p>
             </div>
@@ -311,7 +311,7 @@ export default function AboutPage() {
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-[#12243A]">
                   Located in the Heart of Nairobi
                 </h2>
-                <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
+                <p className="text-md text-slate-600 leading-relaxed">
                   Conveniently situated in Nairobi CBD, our offices serve businesses across the Nairobi metropolitan area, wider Kenya, and regional East African clients.
                 </p>
 
@@ -352,7 +352,7 @@ export default function AboutPage() {
                     SA
                   </div>
                   <h3 className="text-lg font-bold">Schedule an In-Person Meeting</h3>
-                  <p className="text-xs text-slate-300">
+                  <p className="text-sm text-slate-300 leading-relaxed">
                     We welcome visits by appointment for quiet, confidential discussions regarding your financial systems, statutory challenges, or staff training needs.
                   </p>
                   <Link
@@ -375,7 +375,7 @@ export default function AboutPage() {
           <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">
             Partner With a Consultancy That Invests in Your Success
           </h2>
-          <p className="text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+          <p className="text-md sm:text-lg text-slate-300 max-w-2xl mx-auto leading-relaxed">
             Experience the peace of mind that comes with accurate books, zero statutory surprises, and an empowered team.
           </p>
           <div className="pt-4">

@@ -34,7 +34,7 @@ function ThankYouContent() {
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#12243A]">
           Thank You for Reaching Out
         </h1>
-        <p className="text-base sm:text-lg text-slate-600 max-w-xl mx-auto">
+        <p className="text-md sm:text-lg text-slate-600 max-w-xl mx-auto leading-relaxed">
           Your consultation request has been logged successfully. Our managing consultant, Catherine Mwangi, will review your details shortly.
         </p>
       </div>
@@ -47,7 +47,7 @@ function ThankYouContent() {
         <div className="text-xl font-mono font-bold text-[#12243A] tracking-wider select-all">
           {ref}
         </div>
-        <p className="text-xs text-slate-500 mt-2">
+        <p className="text-sm text-slate-500 mt-2">
           Please retain this reference code for any follow-up communications with our Nairobi office.
         </p>
       </div>
@@ -63,7 +63,7 @@ function ThankYouContent() {
             </div>
             <div>
               <div className="text-sm font-semibold text-[#12243A]">Initial Requirement Assessment</div>
-              <div className="text-xs text-slate-600">Within 24 business hours, our team evaluates your submission against available scheduling and engagement capacity.</div>
+              <div className="text-sm text-slate-600 leading-relaxed">Within 24 business hours, our team evaluates your submission against available scheduling and engagement capacity.</div>
             </div>
           </div>
 
@@ -73,7 +73,7 @@ function ThankYouContent() {
             </div>
             <div>
               <div className="text-sm font-semibold text-[#12243A]">Discovery Conversation</div>
-              <div className="text-xs text-slate-600">We reach out via your preferred channel to clarify specific requirements, software environments, or training timelines.</div>
+              <div className="text-sm text-slate-600 leading-relaxed">We reach out via your preferred channel to clarify specific requirements, software environments, or training timelines.</div>
             </div>
           </div>
 
@@ -83,7 +83,7 @@ function ThankYouContent() {
             </div>
             <div>
               <div className="text-sm font-semibold text-[#12243A]">Transparent Scope & Proposal</div>
-              <div className="text-xs text-slate-600">You receive a concrete scope of work, timeline, and fee proposal before any commitment is made.</div>
+              <div className="text-sm text-slate-600 leading-relaxed">You receive a concrete scope of work, timeline, and fee proposal before any commitment is made.</div>
             </div>
           </div>
         </div>
