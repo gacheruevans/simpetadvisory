@@ -326,7 +326,7 @@ export default function HomePage() {
                     </div>
 
                     {srv.id === "tax-statutory-consultancy" && (
-                      <div className="relative w-28 h-6 shrink-0 bg-white p-1 rounded-lg border border-slate-200/90 shadow-2xs" title="Kenya Revenue Authority Compliance">
+                      <div className="relative w-28 h-14 shrink-0 bg-white p-1 shadow-2xs" title="Kenya Revenue Authority Compliance">
                         <Image
                           src="/images/kra-logo.png"
                           alt="KRA Compliance"
