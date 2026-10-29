@@ -39,7 +39,7 @@ export default function HomePage() {
               {/* Dual Trust Badges */}
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
                 <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 shadow-inner">
-                  <div className="relative w-12 h-4 shrink-0">
+                  <div className="relative w-28 h-12 shrink-0">
                     <Image
                       src="/images/zoho-logo.png"
                       alt="Zoho"
@@ -52,7 +52,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-slate-900 border border-slate-200 text-xs sm:text-sm font-semibold shadow-xs">
-                  <div className="relative w-24 h-4 shrink-0">
+                  <div className="relative w-28 h-12 shrink-0">
                     <Image
                       src="/images/kra-logo.png"
                       alt="Kenya Revenue Authority"
