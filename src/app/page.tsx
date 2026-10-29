@@ -1,19 +1,19 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  BarChart3, 
-  FileCheck2, 
-  ShieldCheck, 
-  GraduationCap, 
-  Boxes, 
-  Users, 
-  Sparkles, 
-  TrendingUp, 
-  MapPin, 
-  Phone, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  BarChart3,
+  FileCheck2,
+  ShieldCheck,
+  GraduationCap,
+  Boxes,
+  Users,
+  Sparkles,
+  TrendingUp,
+  MapPin,
+  Phone,
   Briefcase,
   Layers,
   Award
@@ -24,7 +24,7 @@ import FaqSection from "@/components/home/FaqSection";
 export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      
+
       {/* 1. HERO SECTION */}
       <section className="relative overflow-hidden bg-gradient-to-b from-slate-900 via-[#12243A] to-[#0a1522] text-white pt-20 pb-28 lg:pt-28 lg:pb-36">
         {/* Subtle decorative glow */}
@@ -33,7 +33,7 @@ export default function HomePage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-            
+
             {/* Left Hero Content */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               {/* Dual Trust Badges */}
@@ -116,7 +116,7 @@ export default function HomePage() {
             <div className="lg:col-span-5">
               <div className="relative mx-auto max-w-md lg:max-w-none">
                 <div className="rounded-3xl bg-slate-800/90 border border-slate-700 p-6 sm:p-8 shadow-2xl backdrop-blur-xl relative space-y-6">
-                  
+
                   {/* Card Header */}
                   <div className="flex items-center justify-between pb-4 border-b border-slate-700/80">
                     <div className="flex items-center gap-3">
@@ -195,7 +195,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            
+
             {/* Journey 1: HR & Learning Teams */}
             <div className="rounded-2xl border border-slate-200 p-8 bg-slate-50/50 hover:bg-white hover:shadow-xl hover:border-teal-200 transition-all duration-300 flex flex-col justify-between group">
               <div className="space-y-4">
@@ -284,7 +284,7 @@ export default function HomePage() {
       {/* 3. CORE SERVICES SECTION (The 5 Practices) */}
       <section className="py-24 bg-slate-50 border-b border-slate-200" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          
+
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
             <div className="space-y-3 max-w-2xl">
               <span className="text-xs font-bold tracking-widest uppercase text-[#0F766E]">
@@ -337,9 +337,9 @@ export default function HomePage() {
                     )}
 
                     {srv.id === "zoho-books-erp-consultancy" && (
-                      <div className="relative w-20 h-6 shrink-0 bg-[#12243A] p-1 rounded-lg border border-slate-700 shadow-2xs" title="Authorized Zoho Partner">
+                      <div className="relative w-24 h-14 shrink-0 bg-white p-1  shadow-2xs" title="Authorized Zoho Partner">
                         <Image
-                          src="/images/zoho-logo.png"
+                          src="/images/zoho-logo-color.png"
                           alt="Zoho Partner"
                           fill
                           className="object-contain p-0.5"
@@ -500,7 +500,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            
+
             {/* Step 1 */}
             <div className="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm relative">
               <div className="text-3xl font-extrabold text-teal-600/30 mb-2">01</div>
@@ -546,7 +546,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="rounded-3xl border border-slate-200 bg-slate-50/60 p-8 sm:p-12 lg:p-16">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
-              
+
               <div className="lg:col-span-4 flex justify-center">
                 <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl bg-gradient-to-tr from-[#12243A] via-[#1a3656] to-teal-700 flex flex-col items-center justify-center text-white shadow-xl p-6 text-center">
                   <div className="w-20 h-20 rounded-full bg-white/10 border border-white/20 flex items-center justify-center text-3xl font-bold mb-3">

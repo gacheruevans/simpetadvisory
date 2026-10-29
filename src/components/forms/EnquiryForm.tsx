@@ -298,9 +298,9 @@ export default function EnquiryForm() {
               <div className="text-xs font-bold uppercase tracking-wider text-teal-800">
                 Systems & Migration Details
               </div>
-              <div className="relative w-16 h-5 shrink-0 bg-[#12243A] p-0.5 rounded border border-slate-700">
+              <div className="relative w-20 h-5 shrink-0 bg-white p-0.5 rounded border border-teal-300 shadow-2xs">
                 <Image
-                  src="/images/zoho-logo.png"
+                  src="/images/zoho-logo-color.png"
                   alt="Zoho"
                   fill
                   className="object-contain"

@@ -211,9 +211,9 @@ export default function AboutPage() {
                       <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
                       <span>Authorized Zoho Books cloud ERP implementation expertise</span>
                     </div>
-                    <div className="relative w-16 h-6 shrink-0 bg-[#12243A] rounded p-0.5 border border-slate-700 hidden sm:block">
+                    <div className="relative w-20 h-6 shrink-0 bg-white rounded p-0.5 border border-slate-200 hidden sm:block">
                       <Image
-                        src="/images/zoho-logo.png"
+                        src="/images/zoho-logo-color.png"
                         alt="Zoho"
                         fill
                         className="object-contain"

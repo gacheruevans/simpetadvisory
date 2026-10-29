@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { 
   BarChart3, 
@@ -57,17 +58,41 @@ export default function ServicesPage() {
               className="rounded-3xl bg-white border border-slate-200 p-8 sm:p-12 shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col lg:flex-row lg:items-center justify-between gap-8 group"
             >
               <div className="space-y-4 max-w-3xl">
-                <div className="flex items-center gap-3">
-                  <div className="w-12 h-12 rounded-2xl bg-teal-50 text-[#0F766E] group-hover:bg-[#0F766E] group-hover:text-white flex items-center justify-center transition-colors shadow-xs">
-                    {srv.id === "accounting-financial-management" && <BarChart3 className="w-6 h-6" />}
-                    {srv.id === "tax-statutory-consultancy" && <FileCheck2 className="w-6 h-6" />}
-                    {srv.id === "outsourced-audit" && <ShieldCheck className="w-6 h-6" />}
-                    {srv.id === "staff-training-empowerment" && <GraduationCap className="w-6 h-6" />}
-                    {srv.id === "zoho-books-erp-consultancy" && <Boxes className="w-6 h-6" />}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 text-[#0F766E] group-hover:bg-[#0F766E] group-hover:text-white flex items-center justify-center transition-colors shadow-xs">
+                      {srv.id === "accounting-financial-management" && <BarChart3 className="w-6 h-6" />}
+                      {srv.id === "tax-statutory-consultancy" && <FileCheck2 className="w-6 h-6" />}
+                      {srv.id === "outsourced-audit" && <ShieldCheck className="w-6 h-6" />}
+                      {srv.id === "staff-training-empowerment" && <GraduationCap className="w-6 h-6" />}
+                      {srv.id === "zoho-books-erp-consultancy" && <Boxes className="w-6 h-6" />}
+                    </div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                      Practice 0{index + 1}
+                    </span>
                   </div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
-                    Practice 0{index + 1}
-                  </span>
+
+                  {srv.id === "tax-statutory-consultancy" && (
+                    <div className="relative w-28 h-6 shrink-0 bg-white p-1 rounded-lg border border-slate-200/90 shadow-2xs" title="Kenya Revenue Authority Compliance">
+                      <Image
+                        src="/images/kra-logo.png"
+                        alt="KRA Compliance"
+                        fill
+                        className="object-contain p-0.5"
+                      />
+                    </div>
+                  )}
+
+                  {srv.id === "zoho-books-erp-consultancy" && (
+                    <div className="relative w-24 h-7 shrink-0 bg-white p-1 rounded-lg border border-slate-200/90 shadow-2xs" title="Authorized Zoho Partner">
+                      <Image
+                        src="/images/zoho-logo-color.png"
+                        alt="Zoho Partner"
+                        fill
+                        className="object-contain p-0.5"
+                      />
+                    </div>
+                  )}
                 </div>
 
                 <h2 className="text-2xl sm:text-3xl font-bold text-[#12243A]">
