@@ -84,6 +84,20 @@ export default async function ServiceDetailPage({ params }: Props) {
                 {service.badge}
               </div>
 
+              {service.slug === "tax-statutory-consultancy" && (
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white text-slate-900 border border-slate-200 text-xs font-semibold shadow-xs">
+                  <div className="relative w-20 h-4 shrink-0">
+                    <Image
+                      src="/images/kra-logo.png"
+                      alt="Kenya Revenue Authority"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-[10px] text-slate-500 font-medium border-l border-slate-200 pl-2">Tax Compliance</span>
+                </div>
+              )}
+
               {service.slug === "zoho-books-erp-consultancy" && (
                 <div className="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-slate-800/90 border border-slate-700 text-xs text-white">
                   <div className="relative w-12 h-4 shrink-0">
@@ -153,6 +167,31 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Partner Assurance Banner for KRA */}
+      {service.slug === "tax-statutory-consultancy" && (
+        <section className="py-10 bg-slate-900 border-b border-slate-800 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 sm:p-8 rounded-3xl bg-slate-800/80 border border-slate-700 shadow-xl">
+              <div className="space-y-1 text-center md:text-left">
+                <div className="text-xs font-bold uppercase tracking-wider text-teal-400">Statutory Tax Excellence</div>
+                <h3 className="text-xl sm:text-2xl font-bold">KRA iTax, eTIMS & Statutory Compliance</h3>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
+                  We manage your monthly VAT, PAYE, and annual corporate returns with zero default notices, complete ledger accuracy, and dedicated KRA audit defense.
+                </p>
+              </div>
+              <div className="relative w-48 h-14 shrink-0 bg-white rounded-2xl p-2.5 border border-slate-200 shadow-md">
+                <Image
+                  src="/images/kra-logo.png"
+                  alt="Kenya Revenue Authority"
+                  fill
+                  className="object-contain p-1"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Partner Assurance Banner for Zoho */}
       {service.slug === "zoho-books-erp-consultancy" && (

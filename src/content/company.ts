@@ -32,6 +32,7 @@ export const COMPANY_INFO = {
   },
   partnerNotice: "Authorized Zoho Partner for Cloud ERP and Accounting Systems Implementation in East Africa.",
   zohoLogo: "/images/zoho-logo.png",
+  kraLogo: "/images/kra-logo.png",
 } as const;
 
 export const SERVICES: ServiceItem[] = [

@@ -36,20 +36,32 @@ export default function HomePage() {
             
             {/* Left Hero Content */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-              {/* Trust Badge */}
-              <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 shadow-inner">
-                <div className="relative w-12 h-5 shrink-0">
-                  <Image
-                    src="/images/zoho-logo.png"
-                    alt="Zoho"
-                    fill
-                    className="object-contain"
-                  />
+              {/* Dual Trust Badges */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 shadow-inner">
+                  <div className="relative w-12 h-4 shrink-0">
+                    <Image
+                      src="/images/zoho-logo.png"
+                      alt="Zoho"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
+                  <span className="font-semibold text-teal-300">Authorized Partner</span>
                 </div>
-                <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
-                <span className="font-semibold text-teal-300">Authorized Partner</span>
-                <span className="text-slate-500">|</span>
-                <span>Nairobi, Kenya</span>
+
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white text-slate-900 border border-slate-200 text-xs sm:text-sm font-semibold shadow-xs">
+                  <div className="relative w-24 h-4 shrink-0">
+                    <Image
+                      src="/images/kra-logo.png"
+                      alt="Kenya Revenue Authority"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-[11px] font-medium text-slate-600 border-l border-slate-200 pl-2">Tax Compliance</span>
+                </div>
               </div>
 
               {/* Main Headline */}
@@ -303,13 +315,37 @@ export default function HomePage() {
                 className="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm hover:shadow-xl hover:border-teal-300 transition-all duration-300 flex flex-col justify-between group"
               >
                 <div className="space-y-5">
-                  {/* Icon */}
-                  <div className="w-12 h-12 rounded-2xl bg-teal-50 group-hover:bg-[#0F766E] text-[#0F766E] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm">
-                    {srv.id === "accounting-financial-management" && <BarChart3 className="w-6 h-6" />}
-                    {srv.id === "tax-statutory-consultancy" && <FileCheck2 className="w-6 h-6" />}
-                    {srv.id === "outsourced-audit" && <ShieldCheck className="w-6 h-6" />}
-                    {srv.id === "staff-training-empowerment" && <GraduationCap className="w-6 h-6" />}
-                    {srv.id === "zoho-books-erp-consultancy" && <Boxes className="w-6 h-6" />}
+                  {/* Icon & Affiliation Badge */}
+                  <div className="flex items-center justify-between">
+                    <div className="w-12 h-12 rounded-2xl bg-teal-50 group-hover:bg-[#0F766E] text-[#0F766E] group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-sm">
+                      {srv.id === "accounting-financial-management" && <BarChart3 className="w-6 h-6" />}
+                      {srv.id === "tax-statutory-consultancy" && <FileCheck2 className="w-6 h-6" />}
+                      {srv.id === "outsourced-audit" && <ShieldCheck className="w-6 h-6" />}
+                      {srv.id === "staff-training-empowerment" && <GraduationCap className="w-6 h-6" />}
+                      {srv.id === "zoho-books-erp-consultancy" && <Boxes className="w-6 h-6" />}
+                    </div>
+
+                    {srv.id === "tax-statutory-consultancy" && (
+                      <div className="relative w-28 h-6 shrink-0 bg-white p-1 rounded-lg border border-slate-200/90 shadow-2xs" title="Kenya Revenue Authority Compliance">
+                        <Image
+                          src="/images/kra-logo.png"
+                          alt="KRA Compliance"
+                          fill
+                          className="object-contain p-0.5"
+                        />
+                      </div>
+                    )}
+
+                    {srv.id === "zoho-books-erp-consultancy" && (
+                      <div className="relative w-20 h-6 shrink-0 bg-[#12243A] p-1 rounded-lg border border-slate-700 shadow-2xs" title="Authorized Zoho Partner">
+                        <Image
+                          src="/images/zoho-logo.png"
+                          alt="Zoho Partner"
+                          fill
+                          className="object-contain p-0.5"
+                        />
+                      </div>
+                    )}
                   </div>
 
                   <div>

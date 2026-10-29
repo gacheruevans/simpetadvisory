@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { 
   ShieldCheck, 
@@ -190,13 +191,34 @@ export default function AboutPage() {
                     <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
                     <span>Hands-on leadership across all client advisory assignments</span>
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
-                    <span>Deep familiarity with KRA iTax, eTIMS, VAT, and corporate statutory rules</span>
+                  <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-white border border-slate-200">
+                    <div className="flex items-center gap-3 text-sm text-slate-700">
+                      <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
+                      <span>Deep familiarity with KRA iTax, eTIMS, VAT, and corporate statutory rules</span>
+                    </div>
+                    <div className="relative w-24 h-6 shrink-0 bg-white rounded p-0.5 border border-slate-200 hidden sm:block">
+                      <Image
+                        src="/images/kra-logo.png"
+                        alt="Kenya Revenue Authority"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-slate-700">
-                    <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
-                    <span>Certified Zoho Books cloud ERP implementation expertise</span>
+
+                  <div className="flex items-center justify-between gap-3 p-3 rounded-xl bg-white border border-slate-200">
+                    <div className="flex items-center gap-3 text-sm text-slate-700">
+                      <CheckCircle2 className="w-5 h-5 text-teal-600 shrink-0" />
+                      <span>Authorized Zoho Books cloud ERP implementation expertise</span>
+                    </div>
+                    <div className="relative w-16 h-6 shrink-0 bg-[#12243A] rounded p-0.5 border border-slate-700 hidden sm:block">
+                      <Image
+                        src="/images/zoho-logo.png"
+                        alt="Zoho"
+                        fill
+                        className="object-contain"
+                      />
+                    </div>
                   </div>
                 </div>
 

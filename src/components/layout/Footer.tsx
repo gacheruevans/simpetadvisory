@@ -52,19 +52,36 @@ export default function Footer() {
               </p>
             </div>
 
-            {/* Authorized Zoho Partner Callout */}
-            <div className="p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-between gap-3 max-w-sm">
-              <div className="space-y-0.5">
-                <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Authorized Partner</span>
-                <span className="text-xs text-teal-300 block">Cloud ERP & Accounting</span>
+            {/* Trust & Partnership Badges */}
+            <div className="space-y-2.5 max-w-sm">
+              <div className="p-3 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-between gap-3">
+                <div className="space-y-0.5">
+                  <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Authorized Partner</span>
+                  <span className="text-xs text-teal-300 block">Cloud ERP & Accounting</span>
+                </div>
+                <div className="relative w-24 h-8 shrink-0">
+                  <Image
+                    src="/images/zoho-logo.png"
+                    alt="Zoho"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
-              <div className="relative w-24 h-9 shrink-0">
-                <Image
-                  src="/images/zoho-logo.png"
-                  alt="Zoho"
-                  fill
-                  className="object-contain"
-                />
+
+              <div className="p-3 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-between gap-3">
+                <div className="space-y-0.5">
+                  <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Statutory Advisory</span>
+                  <span className="text-xs text-amber-300 block">KRA Tax & Returns Compliance</span>
+                </div>
+                <div className="relative w-28 h-8 shrink-0 bg-white rounded-lg p-1">
+                  <Image
+                    src="/images/kra-logo.png"
+                    alt="Kenya Revenue Authority"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
               </div>
             </div>
           </div>

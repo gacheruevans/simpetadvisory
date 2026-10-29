@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 import { useRouter, useSearchParams } from "next/navigation";
 import { 
   Send, 
@@ -293,8 +294,18 @@ export default function EnquiryForm() {
 
         {serviceId === "zoho-books-erp-consultancy" && (
           <div className="p-5 rounded-2xl bg-teal-50/70 border border-teal-200/80 space-y-4 animate-in fade-in duration-200">
-            <div className="text-xs font-bold uppercase tracking-wider text-teal-800">
-              Systems & Migration Details
+            <div className="flex items-center justify-between">
+              <div className="text-xs font-bold uppercase tracking-wider text-teal-800">
+                Systems & Migration Details
+              </div>
+              <div className="relative w-16 h-5 shrink-0 bg-[#12243A] p-0.5 rounded border border-slate-700">
+                <Image
+                  src="/images/zoho-logo.png"
+                  alt="Zoho"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -337,8 +348,18 @@ export default function EnquiryForm() {
 
         {serviceId === "tax-statutory-consultancy" && (
           <div className="p-5 rounded-2xl bg-amber-50/70 border border-amber-200/80 space-y-3 animate-in fade-in duration-200">
-            <div className="text-xs font-bold uppercase tracking-wider text-amber-900">
-              KRA Statutory Focus
+            <div className="flex items-center justify-between">
+              <div className="text-xs font-bold uppercase tracking-wider text-amber-900">
+                KRA Statutory Focus
+              </div>
+              <div className="relative w-24 h-5 shrink-0 bg-white p-0.5 rounded border border-amber-200">
+                <Image
+                  src="/images/kra-logo.png"
+                  alt="Kenya Revenue Authority"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </div>
             <div>
               <label className="block text-xs font-medium text-slate-700 mb-1">
