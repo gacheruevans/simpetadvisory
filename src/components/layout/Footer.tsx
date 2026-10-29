@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   MapPin, 
   Mail, 
@@ -52,13 +53,18 @@ export default function Footer() {
             </div>
 
             {/* Authorized Zoho Partner Callout */}
-            <div className="p-3 rounded-xl bg-slate-800/80 border border-slate-700 flex items-center gap-3 max-w-sm">
-              <div className="p-2 rounded-lg bg-teal-900/60 text-teal-300 shrink-0">
-                <ShieldCheck className="w-5 h-5" />
+            <div className="p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700/80 flex items-center justify-between gap-3 max-w-sm">
+              <div className="space-y-0.5">
+                <span className="text-[11px] font-bold text-white uppercase tracking-wider block">Authorized Partner</span>
+                <span className="text-xs text-teal-300 block">Cloud ERP & Accounting</span>
               </div>
-              <div className="text-xs">
-                <span className="font-semibold text-white block">Authorized Zoho Partner</span>
-                <span className="text-slate-400">Certified implementation & accounting workflows</span>
+              <div className="relative w-24 h-9 shrink-0">
+                <Image
+                  src="/images/zoho-logo.png"
+                  alt="Zoho"
+                  fill
+                  className="object-contain"
+                />
               </div>
             </div>
           </div>
@@ -160,7 +166,14 @@ export default function Footer() {
                 <Phone className="w-4 h-4 text-[#0F766E] shrink-0 mt-0.5" />
                 <div>
                   <span className="font-medium text-white block">Telephone:</span>
-                  <span className="text-white font-semibold">{COMPANY_INFO.contact.phoneDisplay}</span>
+                  <div className="flex flex-col space-y-1 text-white font-semibold">
+                    <a href="tel:+254773100577" className="hover:text-teal-400 transition-colors">
+                      0773 100 577
+                    </a>
+                    <a href="tel:+254750371381" className="hover:text-teal-400 transition-colors">
+                      0750 371 381
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

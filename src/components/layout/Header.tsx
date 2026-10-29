@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { 
   ChevronDown, 
@@ -98,11 +99,13 @@ export default function Header() {
             </span>
           </div>
           <div className="flex items-center space-x-4">
-            <span className="text-[#C89B3C] font-medium">Postal: {COMPANY_INFO.contact.postalAddress}</span>
-            <span className="text-slate-400">|</span>
-            <span className="flex items-center gap-1 font-semibold text-white">
+            <span className="text-[#C89B3C] font-medium hidden xl:inline">Postal: {COMPANY_INFO.contact.postalAddress}</span>
+            <span className="text-slate-400 hidden xl:inline">|</span>
+            <span className="flex items-center gap-1.5 font-semibold text-white">
               <Phone className="w-3 h-3 text-[#0F766E]" />
-              {COMPANY_INFO.contact.phoneDisplay}
+              <a href="tel:+254773100577" className="hover:text-teal-300 transition-colors">0773 100 577</a>
+              <span className="text-slate-400 font-normal">or</span>
+              <a href="tel:+254750371381" className="hover:text-teal-300 transition-colors">0750 371 381</a>
             </span>
           </div>
         </div>
@@ -322,19 +325,43 @@ export default function Header() {
             </div>
 
             {/* Mobile Contact Footer Info */}
-            <div className="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-500 space-y-2">
+            <div className="mt-8 pt-6 border-t border-slate-100 text-xs text-slate-500 space-y-3">
               <div className="flex items-center gap-2 text-slate-700 font-medium">
-                <MapPin className="w-4 h-4 text-[#C89B3C]" />
+                <MapPin className="w-4 h-4 text-[#C89B3C] shrink-0" />
                 <span>{COMPANY_INFO.contact.location}</span>
               </div>
+              
+              <div className="flex items-center gap-2 text-slate-700 font-semibold">
+                <Phone className="w-4 h-4 text-[#0F766E] shrink-0" />
+                <div className="flex flex-wrap gap-1 items-center">
+                  <a href="tel:+254773100577" className="text-teal-700 underline">0773 100 577</a>
+                  <span className="text-slate-400">or</span>
+                  <a href="tel:+254750371381" className="text-teal-700 underline">0750 371 381</a>
+                </div>
+              </div>
+
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4 text-[#C89B3C]" />
+                <Mail className="w-4 h-4 text-[#C89B3C] shrink-0" />
                 <a href={`mailto:${COMPANY_INFO.contact.email}`} className="text-teal-700 underline">
                   {COMPANY_INFO.contact.email}
                 </a>
               </div>
-              <div className="text-[11px] text-slate-400">
-                {COMPANY_INFO.contact.postalAddress}
+
+              <div className="pt-2">
+                <div className="p-3 rounded-xl bg-[#12243A] text-white flex items-center justify-between">
+                  <div>
+                    <span className="block text-[11px] font-bold text-white tracking-wide">Authorized Partner</span>
+                    <span className="block text-[10px] text-teal-300">Cloud ERP & Accounting</span>
+                  </div>
+                  <div className="relative w-16 h-7">
+                    <Image
+                      src="/images/zoho-logo.png"
+                      alt="Zoho Authorized Partner"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

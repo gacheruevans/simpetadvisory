@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { 
   ArrowRight, 
   CheckCircle2, 
@@ -36,9 +37,17 @@ export default function HomePage() {
             {/* Left Hero Content */}
             <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
               {/* Trust Badge */}
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-800/80 border border-slate-700/80 text-xs sm:text-sm text-slate-200 shadow-inner">
-                <span className="w-2 h-2 rounded-full bg-teal-400 animate-pulse" />
-                <span className="font-medium text-teal-300">Authorized Zoho Partner</span>
+              <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-slate-800/90 border border-slate-700/80 text-xs sm:text-sm text-slate-200 shadow-inner">
+                <div className="relative w-12 h-5 shrink-0">
+                  <Image
+                    src="/images/zoho-logo.png"
+                    alt="Zoho"
+                    fill
+                    className="object-contain"
+                  />
+                </div>
+                <span className="w-1.5 h-1.5 rounded-full bg-teal-400" />
+                <span className="font-semibold text-teal-300">Authorized Partner</span>
                 <span className="text-slate-500">|</span>
                 <span>Nairobi, Kenya</span>
               </div>
@@ -412,18 +421,23 @@ export default function HomePage() {
 
               {/* Partner Badging Card */}
               <div className="lg:col-span-5">
-                <div className="rounded-2xl bg-slate-900/80 border border-slate-700/80 p-8 text-center space-y-4">
-                  <div className="w-16 h-16 rounded-2xl bg-teal-500/20 text-teal-300 mx-auto flex items-center justify-center">
-                    <ShieldCheck className="w-8 h-8" />
+                <div className="rounded-3xl bg-slate-900/90 border border-slate-700/80 p-8 text-center space-y-5 shadow-2xl">
+                  <div className="relative w-44 h-16 mx-auto">
+                    <Image
+                      src="/images/zoho-logo.png"
+                      alt="Zoho Authorized Partner"
+                      fill
+                      className="object-contain"
+                    />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white">Authorized Zoho Partner</h3>
-                    <p className="text-xs text-slate-400 mt-1">Verified Implementation Specialist</p>
+                    <h3 className="text-xl font-bold text-white tracking-tight">Authorized Zoho Partner</h3>
+                    <p className="text-xs text-teal-300 font-medium mt-1">Verified Implementation Specialist</p>
                   </div>
                   <p className="text-xs text-slate-300 leading-relaxed border-t border-slate-800 pt-4">
                     {COMPANY_INFO.partnerNotice}
                   </p>
-                  <div className="pt-2 text-[11px] text-[#C89B3C] font-medium">
+                  <div className="pt-1 text-[11px] text-[#C89B3C] font-semibold">
                     Strict adherence to official Zoho consulting standards
                   </div>
                 </div>
@@ -575,13 +589,22 @@ export default function HomePage() {
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
 
-            <a
-              href={`tel:${COMPANY_INFO.contact.phone.replace(/\s+/g, '')}`}
-              className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-base font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all gap-2"
-            >
-              <Phone className="w-4 h-4 text-teal-400" />
-              <span>Call Nairobi Office</span>
-            </a>
+            <div className="flex flex-wrap gap-2 justify-center">
+              <a
+                href="tel:+254773100577"
+                className="inline-flex items-center justify-center px-5 py-3.5 rounded-xl text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all gap-2"
+              >
+                <Phone className="w-4 h-4 text-teal-400" />
+                <span>Call 0773 100 577</span>
+              </a>
+              <a
+                href="tel:+254750371381"
+                className="inline-flex items-center justify-center px-5 py-3.5 rounded-xl text-sm font-semibold text-white bg-slate-800 hover:bg-slate-700 border border-slate-700 transition-all gap-2"
+              >
+                <Phone className="w-4 h-4 text-teal-400" />
+                <span>Call 0750 371 381</span>
+              </a>
+            </div>
           </div>
 
           <div className="pt-6 text-xs text-slate-400 flex items-center justify-center gap-2">

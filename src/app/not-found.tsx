@@ -43,7 +43,9 @@ export default function NotFound() {
 
         <div className="pt-6 border-t border-slate-200 text-xs text-slate-500">
           Need immediate assistance? Contact our Nairobi office at{" "}
-          <span className="font-semibold text-slate-700">{COMPANY_INFO.contact.phoneDisplay}</span>
+          <a href="tel:+254773100577" className="font-semibold text-slate-800 underline">0773 100 577</a>
+          {" or "}
+          <a href="tel:+254750371381" className="font-semibold text-slate-800 underline">0750 371 381</a>
         </div>
 
       </div>

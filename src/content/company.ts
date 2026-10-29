@@ -22,12 +22,16 @@ export const COMPANY_INFO = {
   contact: {
     location: "Temple Road, behind Ronald Ngara Post Office, Nairobi",
     postalAddress: "P.O Box 35696-00100, Nairobi, Kenya",
-    phone: "+254 700 000 000",
-    phoneDisplay: "+254 (0) 700 000 000",
+    phone: "+254 773 100 577",
+    phoneSecondary: "+254 750 371 381",
+    phoneDisplay: "0773 100 577 / 0750 371 381",
+    phonePrimaryDisplay: "0773 100 577",
+    phoneSecondaryDisplay: "0750 371 381",
     email: "info@simpetadvisory.com",
     workingHours: "Monday – Friday: 8:00 AM – 5:00 PM EAT",
   },
   partnerNotice: "Authorized Zoho Partner for Cloud ERP and Accounting Systems Implementation in East Africa.",
+  zohoLogo: "/images/zoho-logo.png",
 } as const;
 
 export const SERVICES: ServiceItem[] = [

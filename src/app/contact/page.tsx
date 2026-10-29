@@ -123,10 +123,15 @@ export default function ContactPage() {
                   <div className="flex items-start gap-3">
                     <Phone className="w-5 h-5 text-[#0F766E] shrink-0 mt-0.5" />
                     <div>
-                      <span className="font-semibold text-[#12243A] block">Telephone:</span>
-                      <a href={`tel:${COMPANY_INFO.contact.phone.replace(/\s+/g, '')}`} className="font-medium text-slate-900 hover:text-teal-700">
-                        {COMPANY_INFO.contact.phoneDisplay}
-                      </a>
+                      <span className="font-semibold text-[#12243A] block">Telephone Numbers:</span>
+                      <div className="flex flex-col space-y-1 mt-0.5">
+                        <a href="tel:+254773100577" className="font-semibold text-slate-900 hover:text-teal-700">
+                          0773 100 577
+                        </a>
+                        <a href="tel:+254750371381" className="font-semibold text-slate-900 hover:text-teal-700">
+                          0750 371 381
+                        </a>
+                      </div>
                     </div>
                   </div>
 
@@ -157,12 +162,12 @@ export default function ContactPage() {
                 </p>
                 <div className="pt-2">
                   <a
-                    href="https://wa.me/254700000000?text=Hello%20Simpet%20Advisory,%20I%20would%20like%20to%20discuss%20a%20consultancy%20requirement."
+                    href="https://wa.me/254773100577?text=Hello%20Simpet%20Advisory,%20I%20would%20like%20to%20discuss%20a%20consultancy%20requirement."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center w-full px-5 py-3 rounded-xl text-sm font-semibold text-[#12243A] bg-teal-400 hover:bg-teal-300 transition-colors"
                   >
-                    <span>Message on WhatsApp</span>
+                    <span>Message on WhatsApp (0773 100 577)</span>
                   </a>
                 </div>
               </div>

@@ -99,13 +99,22 @@ function ThankYouContent() {
           <span>Return to Homepage</span>
         </Link>
 
-        <a
-          href={`tel:${COMPANY_INFO.contact.phone.replace(/\s+/g, '')}`}
-          className="w-full sm:w-auto inline-flex items-center justify-center px-6 py-3.5 rounded-xl text-sm font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition-colors gap-2"
-        >
-          <Phone className="w-4 h-4 text-teal-600" />
-          <span>Call If Urgent ({COMPANY_INFO.contact.phoneDisplay})</span>
-        </a>
+        <div className="flex flex-wrap gap-2 justify-center">
+          <a
+            href="tel:+254773100577"
+            className="inline-flex items-center justify-center px-5 py-3.5 rounded-xl text-sm font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition-colors gap-2"
+          >
+            <Phone className="w-4 h-4 text-teal-600" />
+            <span>Call 0773 100 577</span>
+          </a>
+          <a
+            href="tel:+254750371381"
+            className="inline-flex items-center justify-center px-5 py-3.5 rounded-xl text-sm font-semibold text-slate-700 bg-white border border-slate-300 hover:bg-slate-50 transition-colors gap-2"
+          >
+            <Phone className="w-4 h-4 text-teal-600" />
+            <span>Call 0750 371 381</span>
+          </a>
+        </div>
       </div>
 
     </div>

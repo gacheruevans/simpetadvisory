@@ -1,6 +1,7 @@
 import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { 
   ArrowRight, 
@@ -77,9 +78,25 @@ export default async function ServiceDetailPage({ params }: Props) {
           </nav>
 
           <div className="max-w-4xl space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-900/60 border border-teal-700/60 text-xs font-semibold uppercase tracking-wider text-teal-300">
-              <ShieldCheck className="w-3.5 h-3.5" />
-              {service.badge}
+            <div className="flex flex-wrap items-center gap-3">
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-teal-900/60 border border-teal-700/60 text-xs font-semibold uppercase tracking-wider text-teal-300">
+                <ShieldCheck className="w-3.5 h-3.5" />
+                {service.badge}
+              </div>
+
+              {service.slug === "zoho-books-erp-consultancy" && (
+                <div className="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-slate-800/90 border border-slate-700 text-xs text-white">
+                  <div className="relative w-12 h-4 shrink-0">
+                    <Image
+                      src="/images/zoho-logo.png"
+                      alt="Zoho"
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="font-semibold text-teal-300">Authorized Partner</span>
+                </div>
+              )}
             </div>
 
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
@@ -136,6 +153,29 @@ export default async function ServiceDetailPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* Partner Assurance Banner for Zoho */}
+      {service.slug === "zoho-books-erp-consultancy" && (
+        <section className="py-10 bg-slate-900 border-b border-slate-800 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 p-6 sm:p-8 rounded-3xl bg-slate-800/80 border border-slate-700 shadow-xl">
+              <div className="space-y-1 text-center md:text-left">
+                <div className="text-xs font-bold uppercase tracking-wider text-teal-400">Verified Implementation Specialist</div>
+                <h3 className="text-xl sm:text-2xl font-bold">Official Authorized Zoho Partner in Kenya</h3>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-xl">{COMPANY_INFO.partnerNotice}</p>
+              </div>
+              <div className="relative w-36 h-14 shrink-0 bg-slate-900 rounded-2xl p-2 border border-slate-700">
+                <Image
+                  src="/images/zoho-logo.png"
+                  alt="Zoho"
+                  fill
+                  className="object-contain p-1"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* 3. PRACTICE DELIVERABLES */}
       <section className="py-20 bg-slate-50 border-b border-slate-200" id="deliverables">
